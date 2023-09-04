@@ -1,0 +1,12 @@
+@font-face {
+      font-family: 'iran-sans';
+      src: url('./font/IRAN\ Sans\ Regular.eot'), format('eot');
+      src: url('./font/IRAN\ Sans\ Regular.ttf'), format('ttf');
+      src: url('./font/IRAN\ Sans\ Regular.woff'), format('woff');
+      src: url('./font/IRAN\ Sans\ Regular.woff2'), format('woff2');
+}
+
+* {
+      direction: rtl;
+      font-family: 'iran-sans', serif;
+}

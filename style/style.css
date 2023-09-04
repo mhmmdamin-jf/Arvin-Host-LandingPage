@@ -1,0 +1,325 @@
+.logo {
+      height: 30px;
+}
+
+.btn-green {
+      background-color: green;
+}
+
+.btn-fill {
+      background-color: #ee3158;
+      color: white;
+      outline: 1px solid red;
+}
+
+.btn-fill:hover {
+      background-color: white;
+      color: #ee3158;
+}
+
+.menu {
+      background-color: #cee6e6;
+      padding-block-start: 5px;
+      align-items: center;
+}
+
+.menu .co {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: row;
+}
+
+
+.section-1 img {
+
+      width: 50%;
+}
+
+.pointer {
+      transition: .2s;
+      cursor: pointer;
+}
+
+.list li:hover {
+      color: rgb(142, 142, 142);
+}
+
+.list {
+      position: absolute;
+      top: 1%;
+      left: 10%;
+}
+
+.section-2 p {
+      color: #ee3158;
+}
+
+.txt-h2-underlined {
+      position: relative;
+}
+
+.txt-h2-underlined::after {
+      position: absolute;
+      content: ' ';
+      bottom: -40%;
+      left: 45%;
+      right: 45%;
+      border: .01rem solid #ee3158;
+}
+
+.p-box {
+      background-color: #415678;
+      color: white;
+      height: 250px;
+      padding-block: 2%;
+      border-radius: 10px;
+      margin-inline: 1%;
+      margin-top: 5%;
+      padding-inline: 2%;
+}
+
+.p-box-body {
+      height: 220px;
+      padding-block: 2%;
+      padding-inline: 2%;
+      border-radius: 10px;
+}
+
+.f-card svg {
+      color: #ee3158;
+}
+
+.section-3 p {
+      color: #ee3158;
+}
+
+.f-card h4 {
+      font-weight: 800;
+}
+
+.f-card p {
+      text-align: start;
+}
+
+.f-card {
+      margin-inline: 4%;
+      padding: 2%;
+      border-radius: 15px;
+}
+
+.f-card:hover {
+      color: #cee6e6;
+      background-color: #a81d57;
+      transition: .3s;
+}
+
+.f-card:hover p {
+      color: #cee6e6;
+      transition: .3s;
+}
+
+.f-card:hover svg {
+      color: #cee6e6;
+      transition: .3s;
+}
+
+.p-box-body svg p h4 {
+      color: black;
+}
+
+.p-box-body:hover {
+      color: aliceblue;
+      background-color: #415678;
+      transition: .2s;
+}
+
+.p-box-body:hover p {
+      color: aliceblue;
+
+}
+
+.p-box p {
+      font-size: 20px;
+}
+
+.menu .co img {
+      height: 20px;
+
+}
+
+.menu .co h1 {
+      color: #f45151;
+      font-size: 20px;
+}
+
+
+.resume-bg {
+      padding-block: 10%;
+      background-image: url('../data/background-fixed.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+
+}
+
+.resume-detail-obj {
+      color: white;
+      font-size: larger;
+      position: relative;
+      transition: .2s;
+}
+
+.resume-detail-obj svg {
+      width: 40px;
+      height: 40px;
+      outline: 2px solid #fff;
+      outline-offset: 9px;
+      border-radius: 100%;
+}
+
+.p-box-body p {
+      color: #000;
+}
+
+.resume-detail-obj::before {
+      content: '';
+      padding-inline: 1px;
+      padding-block: 60px;
+      top: -120%;
+      left: 50%;
+      position: absolute;
+      background-color: #fff;
+      transition: .4s ease-in-out;
+}
+
+.resume-detail-obj::after {
+      content: '';
+      padding-inline: 1px;
+      padding-block: 50%;
+      top: 120%;
+      left: 50%;
+      position: absolute;
+      background-color: #fff;
+      transition: .4s ease-in-out;
+}
+
+.resume-detail-obj:hover::after {
+      content: '';
+      transform: translateY(120%);
+      transition: .4s ease-in-out;
+}
+
+.resume-detail-obj:hover {
+      color: #4d4d4d;
+      transition: .2s;
+      transform: scale(1.1);
+}
+
+.resume-detail-obj:hover::before {
+      content: '';
+      transform: translateY(-120%);
+      transition: .4s ease-in-out;
+}
+
+.menu-sm {
+      margin-top: 10px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+}
+
+.menu-sm .nav-sm {
+      background-color: #cee6e6;
+}
+
+.menu-sm .menu-list-sm {
+      background-color: #cee6e6;
+}
+
+.menu-sm .co {
+      display: flex;
+      flex-direction: row;
+}
+
+
+.menu-sm .co img {
+      height: 20px;
+}
+
+.menu-sm .co h1 {
+      color: #f45151;
+      font-size: 20px;
+}
+
+.menu-icon {
+      top: 20px;
+      display: block;
+      width: 1.6rem;
+      height: 0.1rem;
+      border-radius: 10rem;
+      background-color: #000;
+      position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+      position: absolute;
+      content: "";
+      background-color: #000;
+      border-radius: 10rem;
+      width: inherit;
+      height: inherit;
+}
+
+.menu-icon::before {
+      top: -0.5rem;
+}
+
+.menu-icon::after {
+      top: 0.5rem;
+}
+
+.menu-icon--open::before {
+      top: 0;
+      transition: top 0.2s, transform 0.2s 0.2s;
+      transform: rotate(-45deg);
+}
+
+
+.menu-icon--open::after {
+      top: 0;
+      transition: top 0.2s, transform 0.2s 0.2s;
+      transform: rotate(45deg);
+}
+
+.menu-icon--open {
+      background-color: transparent;
+      transition: background-color .3s;
+}
+
+
+.menu-list-sm {
+      width: inherit;
+      text-align: center;
+      list-style-type: none;
+}
+
+.menu-list-sm.open {
+      transform: translateY(0);
+      transition: transform 1s ease;
+}
+
+.menu-list-sm.close {
+      transform: translateY(-200%);
+      transition: transform 1s ease;
+}
+
+.menu-list-sm .menu-item:hover {
+      background-color: #415678;
+}
+
+.menu-list-sm .menu-item {
+      border-radius: 10px;
+      padding: 10px;
+      margin-block: 1%;
+}

@@ -1,0 +1,23 @@
+@media (min-width:768px) {
+      .menu {
+            display: block;
+            visibility: visible;
+      }
+
+      .menu-sm {
+            display: none;
+            visibility: hidden;
+      }
+}
+
+@media (max-width:768px) {
+      .menu {
+            display: none;
+            visibility: hidden;
+      }
+
+      .menu-sm {
+            display: block;
+            visibility: visible;
+      }
+}
