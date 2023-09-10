@@ -6,6 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="icon" type="x-icon" href="./data/Logo.svg">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
       <link type="text/css" rel="stylesheet" href="./style/responsive.css">
@@ -21,14 +22,15 @@
 </head>
 
 <body>
-      <header>
+      <div id="particles-js"></div>
+      <header class="head-main">
             <nav class="menu d-flex flex-row justify-content-between">
                   <div class="co me-4">
                         <img src="./data/Logo.svg" class="logo ">
                         <h1>Arvin</h1>
                   </div>
                   <div>
-                        <ul class="list-group-horizontal list-group list-unstyled gap-3 list fs-5">
+                        <ul class="list-group-horizontal list-group list-unstyled gap-3 mt-2 list fs-5">
                               <li class="nav-item pointer">خانه</li>
                               <li class="nav-item pointer">خدمات</li>
                               <li class="nav-item pointer">تعرفه ها</li>
@@ -60,14 +62,16 @@
                   </ul>
             </nav>
       </header>
-      <main class="mt-4">
+      <main class="mt-5">
             <section class="row section-1 align-items-center justify-content-around">
+
                   <div class="col-10 col-lg-4 my-3 text-center">
-                        <h2>ترکیب هنر و تکنولوژی و تجربه منحصر به فرد در زمینه وب و هاستینگ </h2>
-                        <p>ما همراه شما در مسیر موفقیت و توسعه کسب و کارتان در فضای مجازی هستیم و همواره در تلاش برای
+                        <h2 id="tw-text">ترکیب هنر و تکنولوژی و تجربه منحصر به فرد در زمینه وب و هاستینگ </h2>
+                        <p>ما همراه شما در مسیر موفقیت و توسعه کسب و کارتان در فضای مجازی هستیم و همواره در تلاش
+                              برای
                               بروزرسانی و ارائه راه حل های جدید و بهینه می باشیم</p>
                         <button class="btn btn-fill">شروع کنید</button>
-                        <button class="btn btn-outline-danger">تست رایگان</button>
+                        <button class="btn text-light btn-outline-danger">تست رایگان</button>
                   </div>
                   <img class="col-6 mb-5" src="./data/h-img-1.png">
             </section>
@@ -76,48 +80,56 @@
                   <h2 class="txt-h2-underlined mb-5">راهنمای شما در دنیای پویای وب</h2>
                   <div class="row justify-content-around align-items-center">
                         <img class="col-5 mb-4" src="./data/h-img-2.png">
-                        <p class="col-10 col-lg-6 text-dark text-center">شرکت ما با بیش از 10 سال تجربه در زمینه طراحی
+                        <p class="col-10 col-lg-6 text-dark text-center">شرکت ما با بیش از 10 سال تجربه در زمینه
+                              طراحی
                               وب، به عنوان یکی از
                               پیشروها
                               در این صنعت شناخته
-                              می‌شود. از ابتدا تاکنون، هدف ما همواره ایجاد وبسایت‌هایی بی‌نظیر بوده است که ارزش واقعی را
+                              می‌شود. از ابتدا تاکنون، هدف ما همواره ایجاد وبسایت‌هایی بی‌نظیر بوده است که ارزش
+                              واقعی را
                               برای مشتریانمان به ارمغان بیاورد.
-                              تا به امروز، با افتخار به دنبال توسعه دنیای دیجیتال بوده‌ایم و با تمرکز بر روی طراحی و
-                              هاستینگ مدرن، وبسایت‌ها یی را ایجاد می‌کنیم که به چشم‌انداز ماجراجویانه‌ای نگاه کنند. تلاش
-                              ما بر ارائه راهکارهایی مبتنی بر تکنولوژی‌های جدید و تجربه‌ی کاربری بی‌نظیر است. با ما
+                              تا به امروز، با افتخار به دنبال توسعه دنیای دیجیتال بوده‌ایم و با تمرکز بر روی طراحی
+                              و
+                              هاستینگ مدرن، وبسایت‌ها یی را ایجاد می‌کنیم که به چشم‌انداز ماجراجویانه‌ای نگاه
+                              کنند. تلاش
+                              ما بر ارائه راهکارهایی مبتنی بر تکنولوژی‌های جدید و تجربه‌ی کاربری بی‌نظیر است. با
+                              ما
                               همراه شوید و در دنیای مدرن وب کنار ما ماجراجویی‌های بی‌حد و حصر را تجربه کنید.
-                              در تیم ما، افرادی با استعداد و پرانرژی کار می‌کنند که عاشق زبان برنامه‌نویسی و هنر طراحی
-                              هستند. این انگیزه‌ی فراوان، همواره ما را برای خلق وبسایت‌ها و هاستینگ‌هایی بی‌نظیر به حرکت
+                              در تیم ما، افرادی با استعداد و پرانرژی کار می‌کنند که عاشق زبان برنامه‌نویسی و هنر
+                              طراحی
+                              هستند. این انگیزه‌ی فراوان، همواره ما را برای خلق وبسایت‌ها و هاستینگ‌هایی بی‌نظیر
+                              به حرکت
                               می‌اندازد.
                               تعهد ما به ارائه راهکارهای نوآورانه، امنیت بالا، وبسایت‌هایی با سرعت بارگذاری بالا و
-                              تجربه‌ی کاربری بی‌نظیر است. ما همراه شما در انتخاب بهترین راهکار برای تحقق اهداف تجاری‌تان
+                              تجربه‌ی کاربری بی‌نظیر است. ما همراه شما در انتخاب بهترین راهکار برای تحقق اهداف
+                              تجاری‌تان
                               هستیم. </p>
                   </div>
             </section>
             <section class="section-3 col text-center mt-4">
                   <p>پروسه</p>
                   <h2 class="txt-h2-underlined mb-4">روند کاری ما به چه صورت است؟</h2>
-                  <div class="row justify-content-around align-items-center">
-                        <div
-                              class="col-10 col-md-5 col-lg-2 mt-2 mt-lg-0 p-box d-flex flex-column justify-content-center">
+                  <div class="row justify-content-around align-items-center ">
+                        <div class="col-10 col-md-5 col-lg-2 mt-2 mt-lg-0 p-box d-flex flex-column justify-content-center"
+                              data-aos="fade-left">
                               <i class="fas fa-comments fs-1 p-2"></i>
                               <h3 class="fw-bolder">چت و گفتگو</h3>
                               <span>ایجاد فضای دوستانه و صمیمی با مشتریان و بهره‌گیری از اصول ارتباط مؤثر </span>
                         </div>
-                        <div
-                              class="col-10 col-md-5 col-lg-2 mt-2 mt-lg-0 p-box-body d-flex flex-column justify-content-center">
+                        <div class="col-10 col-md-5 col-lg-2 mt-2 mt-lg-0 p-box-body d-flex flex-column justify-content-center"
+                              data-aos="fade-down">
                               <i class="fas fa-film fs-1 p-2"></i>
                               <h3 class="fw-bolder">تهیه و تنظیم محتوا</h3>
                               <p>ایجاد محتواهای جذاب و ارزشمند برای بهبود تجربه کاربری</p>
                         </div>
-                        <div
-                              class="col-10 col-md-5 col-lg-2 mt-2 mt-lg-0 p-box d-flex flex-column justify-content-center">
+                        <div class="col-10 col-md-5 col-lg-2 mt-2 mt-lg-0 p-box d-flex flex-column justify-content-center"
+                              data-aos="fade-down">
                               <i class="fas fa-people-arrows-left-right fs-1 p-2"></i>
                               <h3 class="fw-bolder">ارائه راهکارهای مارکتینگ</h3>
                               <span> استفاده از استراتژی‌های هوشمندانه جهت جذب مخاطبان </span>
                         </div>
-                        <div
-                              class="col-10 col-md-5 col-lg-2 mt-2 mt-lg-0 p-box-body d-flex flex-column justify-content-center">
+                        <div class="col-10 col-md-5 col-lg-2 mt-2 mt-lg-0 p-box-body d-flex flex-column justify-content-center"
+                              data-aos="fade-right">
                               <i class="fas fa-hand-holding-medical fs-1 p-2"></i>
                               <h3 class="fw-bolder">ارائه مشاوره‌های استراتژیک</h3>
                               <p> تصمیم‌گیری‌های هوشمندانه‌ در زمینه رشد و بهبود عملکرد </p>
@@ -129,32 +141,38 @@
                   <p>خدمات</p>
                   <h2 class="txt-h2-underlined mb-4"> چه نیازهایی را از شما برطرف می کنیم؟ </h2>
                   <div class="row">
-                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card">
-                              <i class="fa-brands fa-google fs-2 py-2 rr"></i>
+                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card  "
+                              data-aos="fade-up">
+                              <i class=" fa-brands fa-google fs-2 py-2 rr"></i>
                               <h4>بهینه سازی سئو</h4>
                               <p> افزایش ترافیک و رتبه بندی وبسایت شما برای خزنده ها </p>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card">
+                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card "
+                              data-aos="fade-up">
                               <i class="fa-brands fa-artstation fs-2 py-2"></i>
                               <h4>تولید محتواهای خلاقانه</h4>
                               <p> ترغیب به اقدام و تعامل بیشتر با مشتریان </p>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card">
+                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card "
+                              data-aos="fade-up">
                               <i class="fa-solid fa-chart-line fs-2 py-2"></i>
                               <h4>تحلیل رقبا و بازار</h4>
                               <p> شناسایی چشم‌اندازهای جدید و ایجاد فرصت‌های کسب‌وکاری رو به رشد </p>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card">
+                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card "
+                              data-aos="fade-up">
                               <i class="fa-solid fa-mobile-screen-button fs-2 py-2"></i>
                               <h4>تولید اپلیکیشن موبایل</h4>
                               <p> ایجاد تجربه کاربری همه جانبه و مهیج برای افزایش رضایت مشتریان </p>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card">
+                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card "
+                              data-aos="fade-up">
                               <i class="fa-solid fa-money-bill-wave fs-2 py-2"></i>
                               <h4>راهکارهای افزایش فروش</h4>
                               <p> تنظیم محتواها و کمپین‌های تبلیغاتی هوشمندانه </p>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card">
+                        <div class="col-10 col-md-5 col-lg-3 ms-sm-2 d-flex flex-column align-items-start f-card "
+                              data-aos="fade-up">
                               <i class="fa-solid fa-cloud-arrow-up fs-2 py-2"></i>
                               <h4>بهره مندی از فضای ابری مدرن</h4>
                               <p> امکان همکاری و به اشتراک‌گذاری سریع فایل‌ها و سند‌ها </p>
@@ -186,17 +204,18 @@
                   </div>
             </section>
       </main>
-      <footer>
-            <!-- place footer here -->
-      </footer>
-      <!-- Bootstrap JavaScript Libraries -->
+      </div>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
             </script>
-
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
             integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
             </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init();</script>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script src="./src/particles-js/particles.js"></script>
+      <script src="./src/particles-js/app.js"></script>
 </body>
 
 </html>

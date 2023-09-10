@@ -1,3 +1,34 @@
+body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #ff8400c0, #a90a0a9f);
+      background-size: cover;
+}
+
+:not(#particles-js) {
+      z-index: 2;
+}
+
+#particles-js {
+      position: absolute;
+      padding: 1px;
+      width: 100%;
+      height: 350vh;
+      z-index: 1;
+}
+
+.head-main {
+      background-color: #cee6e6;
+      position: sticky;
+      z-index: 999 !important;
+      left: 5px;
+      right: 5px;
+      border-radius: 7px;
+      width: 99%;
+      top: 1%;
+      margin-bottom: 20px;
+}
+
 .logo {
       height: 30px;
 }
@@ -7,7 +38,7 @@
 }
 
 .btn-fill {
-      background-color: #ee3158;
+      background-color: #eb113d;
       color: white;
       outline: 1px solid red;
 }
@@ -18,7 +49,6 @@
 }
 
 .menu {
-      background-color: #cee6e6;
       padding-block-start: 5px;
       align-items: center;
 }
@@ -51,7 +81,7 @@
 }
 
 .section-2 p {
-      color: #ee3158;
+      color: #ffc6d2;
 }
 
 .txt-h2-underlined {
@@ -90,7 +120,7 @@
 }
 
 .section-3 p {
-      color: #ee3158;
+      color: #ffc6d2;
 }
 
 .f-card h4 {
@@ -152,6 +182,10 @@
       font-size: 20px;
 }
 
+.resume {
+      overflow: hidden;
+}
+
 
 .resume-bg {
       padding-block: 10%;
@@ -210,7 +244,6 @@
 }
 
 .resume-detail-obj:hover {
-      color: #4d4d4d;
       transition: .2s;
       transform: scale(1.1);
 }
