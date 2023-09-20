@@ -21,3 +21,17 @@
             visibility: visible;
       }
 }
+
+@media (max-width:768px) {
+      .resume-bg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+      }
+
+      .resume-detail-obj::after,
+      .resume-detail-obj::before {
+            display: none;
+      }
+}

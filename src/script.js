@@ -3,6 +3,7 @@ let menuIconSpan = document.querySelector('.menu-icon');
 let menuListsm = document.querySelector('.menu-list-sm');
 let open = false;
 const twTextEl = document.querySelector('#tw-text');
+const particleEl = document.querySelector('#particles-js');
 menuIcon.addEventListener('click', function () {
       menuIconSpan.classList.toggle('menu-icon--open');
       open = !open;
@@ -35,5 +36,10 @@ function twHandler() {
             .pauseFor(1000)
             .start();
 }
-
 window.addEventListener('load', twHandler);
+
+(function getDeviceType() {
+      particleEl.style.display = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|iPad|Android|Tablet/i)
+            .test(navigator.userAgent) ?
+            'none' : ""
+})()
